@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="contact-page">
+    <header>
+        <div class="logo">Logo</div>
+    
+            <nav id="headerNav" class="navigation">
+                <ul class="navigation-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Success stories</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+    
+            <button class="header-button" type="button">Contact</button>
+    
+            <div onclick="toggleNav()" id="burger-button" class="burger">
+                <div class="burger-dash"></div>
+                <div class="burger-dash"></div>
+                <div class="burger-dash"></div>
+            </div>
+    
+      
+      
+    </header>
+
+    <main>
+
+        <section class="hero">
+         
+                <h1>Get in touch</h1>
+                <p>We'll create high quality linkable content and build at least 40 high-authority
+                   links to each asset, paving the way for you to grow your rankings, improve brand.
+                </p>
+          
+        </section>
+
+        <div class="contact-section" >
+
+            <article class="contact-information">
+                <h2>Contact information</h2>
+                <p>We'll create high quality linkable content and build at least 40 high-authority.</p>
+
+                <div class="contact-info">
+                        <div class="contact-option">
+                            <img class="contact-icon" src="./src/imgs/phone.svg" alt="">
+                            <div>
+                                <p>+8801779717686</p>
+                                <p>+988678363866</p>
+                            </div>
+                        </div>
+                        <div class="contact-option">
+                            <img class="contact-icon"  src="./src/imgs/envelope.svg" alt="">
+                            <p>Support@uprangly.com</p>
+                        </div>
+                        <div class="contact-option">
+                            <img class="contact-icon"  src="./src//imgs/pin.svg" alt="">
+                            <p>New York, USA</p>
+                        </div>
+                </div>
+            </article>
+
+
+
+            <form class="contact-form" action="/index.html" method="POST">
+                
+                <p class="err-feedback full-span"></p>
+                
+                <div class="labeled-input ">
+                    <label for="">Your name</label>
+                    <input id="name" type="text" name="name" required >
+                </div>
+
+                <div class="labeled-input">
+                    <label for="">Your email</label>
+                    <input id="mail" type="text" name="email" required >
+                </div>
+
+
+                <div class="labeled-input full-span">
+                    <label for="">Your subject</label>
+                    <input id="subject" type="text" name="subject" required >
+                </div>
+                
+
+                <div class="labeled-input full-span">
+                    <label for="">Message</label>
+                    <textarea id="message" name="message" id="" cols="30" rows="6" placeholder="Write your message here"></textarea>
+                </div>
+               
+               <button onclick="formSubmit(event)" class="contact-button" type="submit"> Send Message</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="logo">Logo</div>
+        <nav class="useful">
+            <ul class="navigation-links">
+                <li><a class="useful-link" href="">Terms</a></li>
+                <li><a class="useful-link" href="">Privacy</a></li>
+                <li><a class="useful-link" href="">Cookies</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <img src="./src/imgs/linked.svg" alt="linkedin">
+            <img src="./src/imgs/face.svg" alt="face">
+            <img src="./src/imgs/tweeter.svg" alt="tweeter">
+        </div>
+    </footer>
+
+</div>
+
+<script  src="./src/main.js"></script>
+
+</body>
+</html>

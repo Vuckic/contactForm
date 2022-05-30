@@ -1,0 +1,404 @@
+
+:root{
+    --theme-color:#00B8B0;
+
+    --font-light:#727C7B;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: 0;
+    user-select: none;
+}
+
+a{
+    color: black;
+}
+
+button{
+    padding: 1rem 2.25rem ;
+    background-color: var(--theme-color);
+    color: white;
+        
+   
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    font-weight: 500;
+}
+
+label{
+    display: block;
+    color: var(--font-light);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+img{
+    display: block;
+}
+
+.contact-page{
+    min-height: 100vh;
+    background: rgb(234,255,254);
+background: linear-gradient(180deg, rgba(234,255,254,1) 0%, rgba(216,246,244,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+header{
+    width: 100%;
+    padding: 1.625rem 6rem ;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    color: #464646;
+}
+
+.logo{
+    
+    font-size: clamp(2.4rem,8vw,3rem) ;
+    font-weight: 900;
+    color: var(--theme-color);
+
+    text-transform: uppercase;
+}
+
+.burger{
+    position: relative;
+    z-index: 10;
+    width:1.5rem;
+    height: 0.875rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.burger-dash{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+.navigation-links{
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.navigation{
+    margin-left: auto;
+    margin-right: 2rem;
+    
+}
+
+
+.navigation-links>li{
+    padding: 0 20px;
+}
+
+a:hover{
+   color: var(--theme-color);
+   transition: all 0.3s ease-in-out;
+ 
+}
+
+
+.header-button{
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+     
+}
+
+h1{ 
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero{
+    padding:  4rem 0;
+    
+    width: 80%;   /*  ??  */
+    margin: 0 auto;
+    text-align: center;
+}
+.hero>h1{
+    color: #464646;
+    font-size: clamp(2.6rem,6vw,3rem);
+    margin-bottom: 0.5rem;
+}
+.hero>p{
+    font-weight: 600;
+    color: var(--font-light);
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* page background gradient! */
+
+.contact-section{
+    display: flex;
+    padding: 0.7rem ;  
+    background-color: white;
+    border-radius:1.6rem;
+    margin:0 8%; /* ?? */
+
+    
+}
+
+.contact-information{
+    max-width: 380px;
+    background-color: var(--theme-color);
+    color: white;
+
+    padding: 2.375rem;
+    border-radius: 1rem;
+
+
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-information::after{
+    display: block;
+    position: absolute;
+
+    bottom: -4rem;
+    right: -4rem;
+
+    content: " ";
+    width: 220px;
+    height: 220px;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0) 10%, rgba(255,255,255,0.5466561624649859) 75%);
+
+    border-radius: 150px;
+}
+
+.contact-information>p{
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.contact-option{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.contact-option>img{
+    margin-right: 1rem; /* ?? */
+}
+
+.contact-icon{
+    height: 20px;
+}
+
+.contact-form{
+   width: 66.33333%;
+   padding: 4rem /* ?? */;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2.625rem; 
+
+}
+
+ .err-feedback{
+     color: red;
+     font-weight: 600;
+     width: 100%;
+      
+ }
+
+.labeled-input{  
+    width: 100%;
+    
+}
+
+  input, textarea{
+    display: block;
+    width: 100%;
+    resize: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--font-light);
+
+}   
+
+input:focus{
+    border-bottom: 2px solid var(--theme-color);
+
+}
+
+textarea:focus{
+    border-bottom: 2px solid var(--theme-color);
+
+}
+ 
+ 
+.full-span{
+    grid-column: 1 / -1;
+}
+
+ .contact-button{
+     font-size: 0.875rem;
+     width: fit-content;
+ }
+
+
+/******************* footer   */
+
+
+footer{
+    width: 100%;
+    padding: 1.625rem 6rem ;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+    margin-top: 10vh;
+}
+
+.useful-link{
+        font-size: 0.875rem;
+        font-weight: 600;
+             
+}
+.social{
+    display: flex;
+    gap: 2rem;
+}
+.social>*{
+    height: 1rem;
+    cursor: pointer;
+   
+}
+
+
+ /****************************************/
+
+ @media (min-width: 1124px) {
+    .burger{
+        display: none;
+    }
+}
+ 
+@media (max-width: 1124px) {
+    
+    .navigation{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+
+        left: 0;
+        bottom: 0;
+
+        background-color: white;
+        
+        z-index: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+    }
+
+    .navigation>ul{
+        display: block;
+    }
+
+    .navigation>ul>li{
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .header-button{
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .contact-section{
+        flex-direction:column-reverse;
+        align-items: center;
+      padding: 0.7rem 0;
+    }
+
+    .contact-information{
+        padding: 6%;
+        max-width:initial;
+        width: 100%;
+
+        margin-top: 8vh;
+    }
+
+    .contact-form{
+        
+        grid-template-columns:  1fr;
+        padding: 8%;
+        width: 90%;
+        
+        justify-items: center;
+     
+     }
+     
+   
+  }
+
+  @media (max-width: 803px) {
+
+    header{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+     
+
+     .social{
+         margin: 0 auto;
+     }
+
+     .contact-form{
+       
+       width: 100%;
+ 
+     }
+
+     .contact-information{
+         padding: 2rem;
+     }
+}
+
+  @media (max-width: 670px) {
+    .header-button{
+       display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 6%;
+        padding-bottom: 4rem;
+    }
+}
